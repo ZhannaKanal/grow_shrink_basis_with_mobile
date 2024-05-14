@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+  <body class="bg-[#F2F4F7] pt-[68px]">
+    <!-- <div class="fixed top-0 left-0 w-full flex z-[15] bg-[white] border-b-[1px] border-solid border-[#D9D9D9] px-4 py-3">
+        <div class="max-w-[1300px] w-full mx-auto flex justify-between px-4">
+            <img class="max-w-[160px]" src="./images/logo.svg" draggable="false" alt="">
+            <img class="block lg:hidden" src="images/IMAGE (4).png" alt="3 line">
+            <div class="flex-[1_1_auto] justify-end items-center hidden lg:flex">
+                <a href="#" class="text-[18px] text-[#615C69] font-normal px-4 duration-200 hover:text-[#F6652F]">For company</a>
+                <a href="#" class="text-[18px] text-[#615C69] font-normal px-4 duration-200 hover:text-[#F6652F]">For developers</a>
+                <button type="button" class="px-8 py-[9px] ml-7 mr-4 border-[1px] border-solid border-[#00489D] rounded-[8px] text-[16px] font-medium text-[#00489D] hover:bg-[#00489D] hover:text-[white] duration-200">Sign up</button>
+                <button type="button" class="px-8 py-[9px] border-[1px] border-solid border-[#00489D] text-[white] rounded-[8px] text-[16px] font-medium bg-[#00489D]  hover:bg-[white] hover:text-[#00489D] duration-200">Hire developers</button>
+            </div>
+        </div>
+    </div> -->
+    <div class="max-w-[1300px] w-full mx-auto px-4 pt-12 flex justify-between">
+      <div class="max-w-[300px] w-full mx-4">
+        <p
+          class="border-b-[1px] border-solid border-[#DADADA] text-[20px] font-semibold"
+        >
+          Filter by
+        </p>
+        <div>
+          <div class="border-b-[1px] border-solid border-[#DADADA] pb-[20px]">
+            <div class="flex justify-between items-center">
+              <p class="py-2 text-16px font-medium">Specializations</p>
+              <img class="h-[16px]" src="images/ic_top.png" alt="" />
+            </div>
+            <div class="form-check text-[14px] text-[#686868] px-3">
+              <label class="form-check-label block py-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name=""
+                  id=""
+                  value="checkedValue"
+                />
+                Python (78)
+              </label>
+              <label class="form-check-label block">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name=""
+                  id=""
+                  value="checkedValue"
+                />
+                Java (78)
+              </label>
+              <label class="form-check-label block py-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name=""
+                  id=""
+                  value="checkedValue"
+                />
+                JavaScript (78)
+              </label>
+              <label class="form-check-label block">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name=""
+                  id=""
+                  value="checkedValue"
+                />
+                C++ (78)
+              </label>
+              <label class="form-check-label block py-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name=""
+                  id=""
+                  value="checkedValue"
+                />
+                C# (78)
+              </label>
+              <a class="text-[#00489D]" href="">Show more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="flex justify-between items-center">
+            <p class="py-2 text-16px font-medium">Price</p>
+            <img class="h-[16px]" src="images/ic_bot.png" alt="" />
+          </div>
+          <div class="flex justify-between pb-3">
+            <div
+              class="border-b-[1px] border-solid border-[#BEBEBE] max-w-[140px] w-full"
+            >
+              <p class="text-[#BEBEBE] text-[12px]">Ot</p>
+              <p class="text-[] text-[16px]">4 000 T</p>
+            </div>
+            <div
+              class="border-b-[1px] border-solid border-[#BEBEBE] max-w-[140px] w-full"
+            >
+              <p class="text-[#BEBEBE] text-[12px]">Do</p>
+              <p class="text-[] text-[16px]">25 000 T</p>
+            </div>
+          </div>
+          <input class="px-3 w-full bg-[#00489D]" type="range" />
+        </div>
+      </div>
+      <div class="grow shrink basis-auto mx-4">
+        <p class="text-[24px] font-semibold">IT Jobs</p>
+        <div class="w-full flex justify-between py-3">
+          <input
+            type="text"
+            placeholder="Java developer"
+            class="placeholder-[#DDDDDD] bg-white mr-3 py-3 px-4 grow shrink basis-auto rounded-[8px] text-[16px] outline-none"
+          />
+          <button
+            type="button"
+            class="px- py-[9px] w-[160px] border-[1px] border-solid border-[#00489D] text-white rounded-[8px] text-[16px] font-medium bg-[#00489D] hover:bg-white hover:text-[#00489D] duration-200"
+          >
+            Search
+          </button>
+        </div>
+        <div
+          class="relative max-w-[930px] w-full py-1 my-2 bg-[white] rounded-[8px]"
+        >
+          <div class="flex justify-between">
+            <div class="flex">
+              <img src="images/Ellipse 1.png" alt="" />
+              <p class="text-[16px] font-medium my-4 mx-4">Amber Larson</p>
+            </div>
+            <img class="" src="images/Group 3887.png" alt="" />
+          </div>
+          <div class="max-w-[630px] w-full my-[32px] mx-[32px]">
+            <div class="flex justify-between pt-5 text-[16px] font-medium">
+              <div class="flex justify-start">
+                <p class="pr-1">Senior</p>
+                <img src="images/ic_check_verified.png" alt="" />
+              </div>
+              <p>100% Job Success</p>
+              <p>$50.00/hr</p>
+              <p>Time zone: GMT +6</p>
+            </div>
+            <p class="pt-1 text-[14px] text-[#465472]">
+              Welcome to my profile! I’m a web development expert with more than
+              10 years of experience in the field.
+              <a class="underline text-[#00489D] font-semibold" href=""
+                >Read more</a
+              >
+            </p>
+            <div class="flex justify-start pt-4">
+              <p
+                class="text-[14px] text-[#00489D] bg-[#E6EDF5] rounded-[50px] border-[1px] border-solid border-[#E6EDF5] py-[3px] px-4"
+              >
+                Python
+              </p>
+              <p
+                class="text-[14px] text-[#00489D] bg-[#E6EDF5] rounded-[50px] border-[1px] border-solid border-[#00489D] py-[3px] px-4 mx-2"
+              >
+                Java
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
