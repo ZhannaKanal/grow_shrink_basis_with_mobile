@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./*.html"],
   safelist: [ 'flex'],
-  blocklist: ['grid'],
+  blocklist: [''],
   theme: {
     colors: {
       'orange': '#F6652F',
@@ -14,9 +14,15 @@ module.exports = {
     },
     extend: {
       screens: {
-        vsm: '375px',
-        sm: '450px'
-      }
+        vsm: '315px',
+        sm: '450px',
+        md: '850px',
+      },
+      zIndex: {
+        '100': '100',
+        '0': '0',
+        '10': '10',
+      },
     },
   },
   plugins: [],

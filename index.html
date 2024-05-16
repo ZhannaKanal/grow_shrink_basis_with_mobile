@@ -18,7 +18,7 @@
     }
   </style>
   <body class="bg-[#F2F4F7] pt-[68px]">
-    <!-- <div class="fixed top-0 left-0 w-full flex z-[15] bg-[white] border-b-[1px] border-solid border-[#D9D9D9] px-4 py-3">
+    <div class="fixed top-0 left-0 w-full flex z-[15] bg-[white] border-b-[1px] border-solid border-[#D9D9D9] px-4 py-3">
         <div class="max-w-[1300px] w-full mx-auto flex justify-between px-4">
             <img class="max-w-[160px]" src="./images/logo.svg" draggable="false" alt="">
             <img class="block lg:hidden" src="images/IMAGE (4).png" alt="3 line">
@@ -29,9 +29,9 @@
                 <button type="button" class="px-8 py-[9px] border-[1px] border-solid border-[#00489D] text-[white] rounded-[8px] text-[16px] font-medium bg-[#00489D]  hover:bg-[white] hover:text-[#00489D] duration-200">Hire developers</button>
             </div>
         </div>
-    </div> -->
-    <div class="max-w-[1300px] w-full mx-auto px-4 pt-12 flex justify-between">
-      <div class="max-w-[300px] w-full mx-4">
+    </div>
+    <div class="max-w-[1300px] flex-col md:flex-row w-full mx-auto px-4 pt-12 gap-4 flex justify-between">
+      <div class="max-w-[500px] hidden md:max-w-[300px] md:block w-full mx-4">
         <p
           class="border-b-[1px] border-solid border-[#DADADA] text-[20px] font-semibold"
         >
@@ -121,33 +121,35 @@
           <input class="px-3 w-full bg-[#00489D]" type="range" />
         </div>
       </div>
-      <div class="grow shrink basis-auto mx-4">
+      <div class="grow shrink basis-auto">
         <p class="text-[24px] font-semibold">IT Jobs</p>
-        <div class="w-full flex justify-between py-3">
+        <div class="w-full flex justify-between gap-3 py-3">
+          <button type="button" class="min-w-[50px] bg-[white] rounded-[8px] flex justify-center items-center md:hidden "><img src="images/ic_filter.png" alt=""></button>
           <input
             type="text"
             placeholder="Java developer"
-            class="placeholder-[#DDDDDD] bg-white mr-3 py-3 px-4 grow shrink basis-auto rounded-[8px] text-[16px] outline-none"
+            class="placeholder-[#DDDDDD] bg-white grow shrink basis-auto min-w-[50px] py-3 px-4 grow shrink basis-auto rounded-[8px] text-[16px] outline-none"
           />
           <button
             type="button"
-            class="px- py-[9px] w-[160px] border-[1px] border-solid border-[#00489D] text-white rounded-[8px] text-[16px] font-medium bg-[#00489D] hover:bg-white hover:text-[#00489D] duration-200"
+            class="flex justify-center items-center px-4 py-[9px] min-w-[50px] border-[1px] border-solid border-[#00489D] text-white rounded-[8px] text-[16px] font-medium bg-[#00489D] hover:bg-white hover:text-[#00489D] duration-200"
           >
-            Search
+            <span class="hidden md:block">Search</span>
+            <img class="block md:hidden" src="images/ic_search.png" alt="Search">
           </button>
         </div>
         <div
-          class="relative max-w-[930px] w-full py-1 my-2 bg-[white] rounded-[8px]"
+          class="relative max-w-[930px] w-full  my-2 bg-[white] rounded-[8px] p-8"
         >
-          <div class="flex justify-between">
+          <div class="flex justify-between mb-5">
             <div class="flex">
               <img src="images/Ellipse 1.png" alt="" />
               <p class="text-[16px] font-medium my-4 mx-4">Amber Larson</p>
             </div>
             <img class="" src="images/Group 3887.png" alt="" />
           </div>
-          <div class="max-w-[630px] w-full my-[32px] mx-[32px]">
-            <div class="flex justify-between pt-5 text-[16px] font-medium">
+          <div class="">
+            <div class="grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 text-[16px] font-medium">
               <div class="flex justify-start">
                 <p class="pr-1">Senior</p>
                 <img src="images/ic_check_verified.png" alt="" />

@@ -8,48 +8,102 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <style>
-    *{
-        font-family: "Inter", sans-serif;
+    * {
+      font-family: "Inter", sans-serif;
     }
   </style>
   <body class="bg-[#F2F4F7] pt-[68px]">
-    <div class="fixed top-0 left-0 w-full flex z-[15] bg-[white] border-b-[1px] border-solid border-[#D9D9D9] py-3">
+    <div
+      class="fixed top-0 left-0 w-full flex z-[15] bg-[white] border-b-[1px] border-solid border-[#D9D9D9] py-3"
+    >
       <div class="max-w-[1300px] w-full mx-auto flex justify-between px-4">
-          <img class="max-w-[160px]" src="./images/logo.svg" draggable="false" alt="">
-          <img class="block lg:hidden" src="images/IMAGE (4).png" alt="3 line">
-          <div class="flex-[1_1_auto] justify-end items-center hidden lg:flex">
-              <a href="#" class="text-[18px] text-[#615C69] font-normal px-4 duration-200 hover:text-[#F6652F]">For company</a>
-              <a href="#" class="text-[18px] text-[#615C69] font-normal px-4 duration-200 hover:text-[#F6652F]">For developers</a>
-              <button type="button" class="px-8 py-[9px] ml-7 mr-4 border-[1px] border-solid border-[#00489D] rounded-[8px] text-[16px] font-medium text-[#00489D] hover:bg-[#00489D] hover:text-[white] duration-200">Sign up</button>
-              <button type="button" class="px-8 py-[9px] border-[1px] border-solid border-[#00489D] text-[white] rounded-[8px] text-[16px] font-medium bg-[#00489D]  hover:bg-[white] hover:text-[#00489D] duration-200">Hire developers</button>
-          </div>
-      </div>
-  </div>
-    <div class="pt-[80px]">
-      <div class="bg-[white] max-w-[600px] mx-auto w-full rounded-[8px] p-6">
-        <p class="text-[24px] font-bold ">Hi, welcome back</p>
-        <p class="text-[16px] font-normal py-3">New user?<a href="#" class="text-[#00489D] font-semibold px-2">Create an account</a></p><br>
-        <div class="max-w-[1300px] w-full pr-2 py-2 mx-auto mb-4 border-b-[1px] border-[#BEBEBE] border-solid">
-          <input class=" w-full outline-none" type="email" placeholder="Email address"><br>
+        <img
+          class="max-w-[160px]"
+          src="./images/logo.svg"
+          draggable="false"
+          alt=""
+        />
+        <img class="block lg:hidden" src="images/IMAGE (4).png" alt="3 line" />
+        <div class="flex-[1_1_auto] justify-end items-center hidden lg:flex">
+          <a
+            href="#"
+            class="text-[18px] text-[#615C69] font-normal px-4 duration-200 hover:text-[#F6652F]"
+            >For company</a
+          >
+          <a
+            href="#"
+            class="text-[18px] text-[#615C69] font-normal px-4 duration-200 hover:text-[#F6652F]"
+            >For developers</a
+          >
+          <button
+            type="button"
+            class="px-8 py-[9px] ml-7 mr-4 border-[1px] border-solid border-[#00489D] rounded-[8px] text-[16px] font-medium text-[#00489D] hover:bg-[#00489D] hover:text-[white] duration-200"
+          >
+            Sign up
+          </button>
+          <button
+            type="button"
+            class="px-8 py-[9px] border-[1px] border-solid border-[#00489D] text-[white] rounded-[8px] text-[16px] font-medium bg-[#00489D] hover:bg-[white] hover:text-[#00489D] duration-200 lg:hidden"
+          >
+            Log in
+          </button>
+          <button
+            type="button"
+            class="px-8 py-[9px] border-[1px] border-solid border-[#00489D] text-[white] rounded-[8px] text-[16px] font-medium bg-[#00489D] hover:bg-[white] hover:text-[#00489D] duration-200"
+          >
+            Hire developers
+          </button>
         </div>
-        <div class="flex justify-between pr-2 py-2 mb-4 border-b-[1px] border-[#BEBEBE] border-solid">  
-          <input class="w-full outline-none" type="password" placeholder="Password">
-          <img class="float-right" src="images/hidebtn.png" alt="Hidebtn">
+      </div>
+    </div>
+    <div class="pt-[20px] md:pt-[80px] ">
+      <div class="bg-[white] max-w-[300px] sm:max-w-[400px] md:max-w-[600px]  mx-auto w-full rounded-[8px] p-6">
+        <p class="text-[24px] font-bold">Hi, welcome back</p>
+        <p class="text-[16px] font-normal py-3">
+          New user?<a href="#" class="text-[#00489D] font-semibold px-2"
+            >Create an account</a
+          >
+        </p>
+        <br />
+        <div
+          class="max-w-[1300px] w-full pr-2 py-2 mx-auto mb-4 border-b-[1px] border-[#BEBEBE] border-solid"
+        >
+          <input
+            class="w-full outline-none"
+            type="email"
+            placeholder="Email address"
+          /><br />
+        </div>
+        <div
+          class="flex justify-between pr-2 py-2 mb-4 border-b-[1px] border-[#BEBEBE] border-solid"
+        >
+          <input
+            class="w-full outline-none"
+            type="password"
+            placeholder="Password"
+          />
+          <img class="float-right" src="images/hidebtn.png" alt="Hidebtn" />
         </div>
         <p class="text-end text-[14px] font-normal">Forgot your password?</p>
         <div class="vsm:pt-5">
-          <p class=""> Sign in with social networks</p>
-          <div class="flex justify-start gap-5 my-5 ">
-            <img class="" src="images/Group 3888.png" alt="Google">
-            <img class="" src="images/social media logo.png" alt="Facebook">
-            <img class="" src="images/social media logoapple.png" alt="Apple">
+          <p class="">Sign in with social networks</p>
+          <div class="flex justify-start gap-5 my-5">
+            <img class="" src="images/Group 3888.png" alt="Google" />
+            <img class="" src="images/social media logo.png" alt="Facebook" />
+            <img class="" src="images/social media logoapple.png" alt="Apple" />
           </div>
         </div>
-        <button type="submit" class="px-8 py-[9px] border-[1px] border-solid border-[#00489D] text-[white] rounded-[8px] text-[16px] font-medium bg-[#00489D]  hover:bg-[white] hover:text-[#00489D] duration-200">Log in</button>
+        <button
+          type="submit"
+          class="px-8 py-[9px] border-[1px] border-solid border-[#00489D] text-[white] rounded-[8px] text-[16px] font-medium bg-[#00489D] hover:bg-[white] hover:text-[#00489D] duration-200"
+        >
+          Log in
+        </button>
       </div>
     </div>
   </body>
